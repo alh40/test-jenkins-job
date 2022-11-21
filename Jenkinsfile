@@ -3,12 +3,12 @@ pipeline{
         stages{
             stage('Open Directory'){
                 steps{
-                    sh "cd ~/LBG7-Python-API "
+                    sh "cd ~/LBG7-Python-API"
                 }
             }
             stage('Run App'){
                 steps{
-                    sh "./lbg.py"
+                    sh "python lbg.py"
                 }
             }
         }
