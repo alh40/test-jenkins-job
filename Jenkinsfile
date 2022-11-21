@@ -9,7 +9,7 @@ pipeline{
             }
             stage('Run App'){
                 steps{
-                    sh "python lbg.py"
+                    sh "python3 lbg.py"
                 }
             }
         }
