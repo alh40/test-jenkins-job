@@ -1,14 +1,14 @@
 pipeline{
         agent any
         stages{
-            stage('Make Directory'){
+            stage('Open Directory'){
                 steps{
-                    sh "mkdir ~/jenkins-tutorial-test"
+                    sh "cd ~/LBG7-Python-API "
                 }
             }
-            stage('Make Files'){
+            stage('Run App'){
                 steps{
-                    sh "touch ~/jenkins-tutorial-test/file1 ~/jenkins-tutorial-test/file2"
+                    sh "./lbg.py"
                 }
             }
         }
