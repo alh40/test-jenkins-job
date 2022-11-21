@@ -5,7 +5,7 @@ pipeline{
             stage('Open Directory'){
                 steps{
                     sh "cd ~/LBG7-Python-API"
-		    sh "python3 lbg.py"
+		    sh "python3 /home/jenkins/LBG7-Python-API/lbg.py"
                 }
             }
         }
